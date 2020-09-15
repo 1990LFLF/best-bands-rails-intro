@@ -1,0 +1,18 @@
+<h2>Welcome to the Best Bands Awards</h2>
+
+
+<ul>
+  <% @bands.each do |band| %>
+    <li><%= band %></li>
+  <% end %>
+</ul>
+
+<!-- nome dos parâmetros que chegam no controller
+     vem do nome dos inputs de um formulário -->
+<!-- o formulário pode fazer a requisição para outra rota
+     pois vai funcionar da mesma maneira :ok -->
+<form action="/about" method='GET'>
+  <input type="text" name="band_name" value="<%= params[:band_name] %>" placeholder="Escreva o nome da banda...">
+  <input type="text" name="football_team">
+  <input type="submit" value="Pesquise!">
+</form>
