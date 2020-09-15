@@ -51,6 +51,12 @@ Isso nos permite fazer um link_to "Descubra mais", about_path
 
 # Controllers & Variáveis de Instância & Params
 
+Convention over Configuration!
+
+Controller sempre no plural (ex: BandsController), e a pasta da view sempre com
+o nome do controller (app/views/bands/) e a ação do controller (ex: index) com uma
+view de mesmo nome (app/views/bands/index.html.erb)
+
 Lembrando que se você quer que uma variável definida na ação "x" esteja acessível
 dentro da view "x.html.erb", você precisa declará-la como uma variável de instância.
 
