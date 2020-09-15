@@ -43,7 +43,7 @@ Podemos definir um root path (homepage do sistema) fazendo:
 * root to: 'controller#action'
 
 E, por último, temos também os prefixos das rotas, que são úteis quando estamos
-construindo um link (<a href="">) a partir de código ruby (link_to):
+construindo um link (a href="") a partir de código ruby (link_to):
 
 * get 'about_us', to: 'pages#about', as: 'about'
 
